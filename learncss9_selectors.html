@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        h1{
+            background-color: black;
+            color:white;
+            font-weight:bold;
+            text-align: center;
+        }
+        /* all p anywhere inside div  */
+        div p{
+            color:blue;
+            font-weight:bold;
+            background-color: pink;
+        }
+        /* p who are immediate child of div  */
+        div>p{
+            color:blue;
+            font-weight:bold;
+            background-color: pink;
+        }
+        /* p whose last sibling was div  */
+        div+p{
+            color:blue;
+            font-weight:bold;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>MORE ON SELECTORS</h1>
+    <div class="container">
+        <div class="row">
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outer paragraph</p>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+    <style>
+        :root{
+            --var_bgcol:black;
+        }
+        .container{
+            display:flex;
+        }
+        .card{
+            padding:23px 12px;
+            margin:23px 12px;
+            border:2px solid var(--var_bgcol);
+            background-color: khaki;
+            /* box-shadow left/right top/bottom blur-radius spread-radius color  */
+            /* box-shadow: -10px -15px 10px 2px rgba(180, 171, 185, 0.342); */
+            /* using inset for internal shadow  */
+            /* box-shadow:inset -10px -15px 10px 2px rgba(74, 29, 99, 0.342); */
+            /* for multiple shadow  */
+            box-shadow: 2px 4px red, 6px -3px blue;
+        }
+        .card h2{
+            text-shadow: 2px 3px red ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1"> 
+            <h2>card1</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, impedit odit eius repellendus consequuntur voluptatem non omnis aut alias. Molestiae soluta voluptatum, nesciunt atque enim architecto ea explicabo inventore. Ipsum deserunt tempore eligendi fugiat?</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>card2</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore quas debitis natus nesciunt! Quas, corporis omnis! Labore exercitationem dolorem aliquid corporis! Harum blanditiis, praesentium perferendis quaerat odio suscipit sequi dolore saepe eveniet id numquam?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>card3</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore quas debitis natus nesciunt! Quas, corporis omnis! Labore exercitationem dolorem aliquid corporis! Harum blanditiis, praesentium perferendis quaerat odio suscipit sequi dolore saepe eveniet id numquam?</p>
+        </div>
+    </div>
+</body>
+</html>
